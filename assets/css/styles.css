@@ -6,6 +6,11 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   background-color: #f8f8f8;
+}
+
+html,
+body {
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -314,13 +319,34 @@ form div {
   text-align: left;
 }
 
+/* IPAD */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter-box {
+    text-align: center;
+  }
+
+  .footer {
+    gap: 100px;
+  }
+}
+
 /* MOBILE */
 
 @media screen and (max-width: 768px) {
+  html,
   body {
-    max-width: 100vw;
+    max-width: 100%;
+    position: relative;
     overflow-x: hidden;
   }
+
   .blurred-rectangle {
     display: none;
   }
@@ -344,7 +370,8 @@ form div {
     display: inline;
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 80%;
+    z-index: -1;
   }
 
   .mobile-circle3 {
@@ -356,7 +383,7 @@ form div {
   }
   .image-hero img {
     width: 25%;
-    top: 15%;
+    top: 2%;
   }
 
   .hero {
@@ -395,6 +422,11 @@ form div {
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    overflow-x: hidden;
+  }
+
+  .vision {
+    margin-top: 15%;
   }
 
   .advantages {
@@ -422,15 +454,12 @@ form div {
   }
 
   .vision-image img {
-    max-width: 110vw;
+    max-width: 100vw;
   }
   .vision-image-mobile {
     display: inline;
-    width: 110vw;
-    object-fit: cover;
+    width: 100vw;
     height: auto;
-    z-index: 99;
-    position: relative;
   }
 
   .vision-text {
