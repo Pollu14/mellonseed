@@ -18,7 +18,8 @@ main {
 
 .reticolo-mobile,
 .mobile-circle,
-.mobile-circle2 {
+.mobile-circle2,
+.mobile-circle3 {
   display: none;
 }
 
