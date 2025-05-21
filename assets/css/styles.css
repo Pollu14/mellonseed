@@ -24,7 +24,8 @@ main {
 .reticolo-mobile,
 .mobile-circle,
 .mobile-circle2,
-.mobile-circle3 {
+.mobile-circle3,
+.mobile-vision-carousel {
   display: none;
 }
 
@@ -319,6 +320,50 @@ form div {
   text-align: left;
 }
 
+.pitch {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.pitch-text {
+  display: flex;
+  flex-direction: column;
+}
+.pitch-text p {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  align-self: center;
+}
+
+.pitch-button i {
+  padding-right: 5px;
+}
+
+.pitch-button {
+  align-self: center;
+  justify-self: center;
+  background-color: #949227;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 20px;
+  max-width: 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pitch-button:hover {
+  background-color: #5f5e1a;
+}
 /* IPAD */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -381,6 +426,11 @@ form div {
     margin-right: -15rem;
     width: 50%;
   }
+
+  .mobile-vision-carousel {
+    display: inline;
+  }
+
   .image-hero img {
     width: 25%;
     top: 2%;
