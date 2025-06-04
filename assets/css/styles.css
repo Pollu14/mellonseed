@@ -21,6 +21,7 @@ body {
 
 .off-screen-menu {
   display: none;
+  right: -1000px;
 }
 
 .hamburger-menu {
@@ -215,6 +216,7 @@ body {
     gap: 20px;
     padding: 0;
     margin: 0;
+    margin-bottom: 50px;
   }
 
   .off-screen-login {
